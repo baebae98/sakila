@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto 0 auto;
+	max-width: 1000px;
+}
+
+section .container {
+	display: flex;
+	flex-flow: column;
+}
+
+main {
+	padding: 20px 10px 20px 10px;
+	max-width: 760px;
+}
+
+.sidebar {
+	padding: 20px 10px 20px 10px;
+	background: #E0E0E0;
+}
+
+hr {
+	border: solid 1px gray;
+}
+
+.adminInfo-table td {
+	padding: 5px;
+}
+			
+@media only screen and (min-width: 768px) {
+	section .container {
+		flex-flow: row;
+	}
+	.sidebar {
+		flex: 0 1 240px;
+		min-width: 240px;
+		min-height: 960px;
+	}
+	main {
+		flex: 1 0 auto;
+		padding-left: 30px;
+	}
+}
